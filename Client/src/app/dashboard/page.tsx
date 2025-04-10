@@ -53,7 +53,7 @@ export default function Dashboard() {
 
       console.log('Fetching user data for ID:', authUser.id);
       try {
-        const response = await fetch(`http://localhost:8080/api/users/${authUser.id}`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/users/${authUser.id}`);
         if (!response.ok) throw new Error('Failed to fetch user data');
         
         const data = await response.json();

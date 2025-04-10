@@ -12,7 +12,7 @@
     "dev": "cd Server/Database && supabase start && concurrently \"yarn dev:server\" \"yarn dev:client\"",
     "server": "cd Server && nodemon --exec ts-node main.ts",
     "client": "cd Client && next dev",
-      "build": "cd Client && next build",
+    "build": "cd Client && next build",
     "start:client": "cd Client && next start",
     "start:server": "cd Server && ts-node main.ts",
     "start": "concurrently \"yarn start:server\" \"yarn start:client\"",
@@ -74,5 +74,6 @@
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

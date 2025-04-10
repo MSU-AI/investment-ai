@@ -53,7 +53,7 @@ export function Header() {
       }
 
       try {
-        const response = await fetch(`http://localhost:8080/api/users/${authUser.id}`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/users/${authUser.id}`);
         
         if (!response.ok) {
           const errorText = await response.text();
