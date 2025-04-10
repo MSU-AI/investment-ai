@@ -1,7 +1,5 @@
 node_modules/
 
-.env
-.env.local
 
 # Intermediate files (mac to PC) that I dont want to add
 install-state.gz    
