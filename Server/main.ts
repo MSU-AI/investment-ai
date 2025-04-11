@@ -15,7 +15,7 @@ const allowedOrigins = [
   'http://localhost:3000',                     // Local development
   // Production frontend URL
   process.env.NEXT_PUBLIC_URL,                 // Dynamic URL from env
-].filter(Boolean); // Remove any undefined values
+]
 
 // Configure CORS
 app.use(cors({

@@ -1,9 +1,4 @@
 import { defineConfig } from "drizzle-kit";
-import dotenv from "dotenv";
-import path from "path";
-
-// Load environment variables from root project directory
-dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
 export default defineConfig({
     dialect: "postgresql",

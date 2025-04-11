@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 
 // Load environment variables from root project directory
-dotenv.config({ path: path.resolve(__dirname, '../../../.env') });
+dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
 // Check if DATABASE_URL is defined
 if (!process.env.DATABASE_URL) {
@@ -14,6 +14,7 @@ if (!process.env.DATABASE_URL) {
 }
 
 // Create a Postgres client
+
 const client = postgres(process.env.DATABASE_URL);
 
 // Create a Drizzle instance

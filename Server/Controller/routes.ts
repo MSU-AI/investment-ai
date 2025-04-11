@@ -1,8 +1,6 @@
 import express, { Request, Response } from "express";
 import * as service from '../Service/service'
-import dotenv from 'dotenv';
 
-dotenv.config({ path:  '../../.env' });
 
 export const router = express.Router();
 
