@@ -1,0 +1,13 @@
+**Model Requirements**
+
+import tensorflow as tf
+from tensorflow.keras.layers import Input, LSTM, Dense, Dropout
+from tensorflow.keras.models import Model
+import os
+import glob
+import json
+import pandas as pd
+from datetime import datetime
+from sklearn.preprocessing import MinMaxScaler
+import numpy as np
+from sklearn.utils import shuffle
